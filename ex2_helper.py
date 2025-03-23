@@ -16,7 +16,7 @@ def load_data():
     # Load feature names
     features_df = pd.read_csv(features_path, sep="\\s+", header=None, names=["idx", "feature"])
     feature_names = features_df["feature"].tolist()
-    unique_feature_names = make_unique(feature_names)  # Assuming make_unique is defined
+    unique_feature_names = make_unique(feature_names)
 
     # Load activity labels (mapping IDs 1-6 to string names)
     activity_labels_df = pd.read_csv(activity_labels_path, sep="\\s+", header=None, names=["id", "activity"])
